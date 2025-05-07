@@ -25,7 +25,7 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'static/uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-FOLDER_ID = '1EBsxXuZksPx4KOyHOiVFYrdHb-zuCC9v'  # Root folder ID
+FOLDER_ID = '11kFOF8p4wGf7V0-rQvXUes_XfE5LtjCZ'  # Root folder ID
 
 # Global variables
 drive_service = None
