@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Vector Logo Finder</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deep Vector Logo Finder</h1>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="buttons">
+                <button id="index-btn">Index Google Drive</button>
+                <input type="file" id="upload-image" accept="image/*" style="display: none;">
+                <button id="select-image-btn">Select Image</button>
+                <button id="paste-image-btn">Paste Image (Ctrl+V)</button>
+                <button id="search-btn" disabled>Search with Image</button>
+            </div>
+            <div class="sensitivity">
+                <label for="sensitivity">Matching Sensitivity:</label>
+                <input type="range" id="sensitivity" min="0.1" max="0.9" step="0.05" value="0.4">
+                <span id="sensitivity-value">0.4</span>
+            </div>
+        </div>
+
+        <!-- Status and Progress -->
+        <div class="status-frame">
+            <span id="status-text">Please index Google Drive before searching</span>
+            <progress id="progress-bar" value="0" max="100" style="display: none;"></progress>
+        </div>
+
+        <!-- Image Preview -->
+        <div class="preview-frame">
+            <h2>Image Preview</h2>
+            <div class="preview-content">
+                <canvas id="preview-canvas" width="200" height="200"></canvas>
+                <div class="image-info">
+                    <p id="image-name">No image selected</p>
+                    <p id="image-size">Size: -</p>
+                    <p id="image-format">Format: -</p>
+                    <button id="clear-image-btn" disabled>Clear Image</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Area -->
+        <div class="results-frame">
+            <h2>Search Results</h2>
+            <div id="results">
+                <p>No search results yet.<br>Please select or paste an image and click search.</p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
