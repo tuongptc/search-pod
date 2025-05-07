@@ -1,0 +1,50 @@
+# Dependency directories
+node_modules/
+bower_components/
+jspm_packages/
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+service-account-key.json
+*-service-account*.json
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Cache directories
+.npm
+.eslintcache
+.cache/
+
+# Coverage
+coverage/
+
+# Generated files
+tmp/
+temp/
+
+# Project specific files and folders
+file_ids.pkl
+file_names.pkl
+vectors.pkl
+webViewLinks.pkl
+src/
+data/
